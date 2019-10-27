@@ -11,12 +11,13 @@
     <h:body>
     	<h2>Post your tweet</h2>
     	<h:form>
-<h:panelGrid columns="2" >
+<h:panelGrid columns="3" >
 
     	   <h:outputLabel value="Tweet: "/>
-    	   <h:inputText value="#{twittercontroller.twitter.tweetBody}"></h:inputText>
+    	   <h:inputTextarea value="#{twittercontroller.twitter.tweetBody}"></h:inputTextarea>
     	   </h:panelGrid>
     	   <h:commandButton value="post" action="#{twittercontroller.sendTweet}"></h:commandButton>
+    	   <h:commandButton  value="Direct Message" action="#{twittercontroller.sendDM}"></h:commandButton>
     	</h:form>
     </h:body>
 </html>

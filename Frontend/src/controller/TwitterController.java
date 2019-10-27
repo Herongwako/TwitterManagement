@@ -7,6 +7,7 @@ import javax.faces.bean.SessionScoped;
 
 import model.Twitter;
 import service.TwitterEJB;
+import twitter4j.TwitterException;
 
 @ManagedBean(name = "twittercontroller")
 @SessionScoped
@@ -21,6 +22,17 @@ public class TwitterController {
 	public void sendTweet() {
 //		System.out.println("Tweet sent");
 		twitterservice.sendTweet(twitter.getEntity());
+	}
+	public void sendDM() {
+//		twitterservice.sendDirectMessages(twitter.getEntity().getTweetBody());
+		try {
+			System.out.println("you clicked send direct message");
+			twitterservice.sendDirectMessages(twitter.getEntity().getTweetBody());
+		} catch (TwitterException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("An error occured " + e);
+		}
 	}
 	public Twitter getTwitter() {
 		return twitter;
