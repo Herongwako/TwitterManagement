@@ -9,7 +9,7 @@
         <title>Heroism Solutions</title>
     </h:head>
     <h:body>
-    	<h2>Post your tweet</h2>
+    	<h2>Post your tweet or Direct Message</h2>
     	<h:form>
 <h:panelGrid columns="3" >
 
@@ -17,8 +17,12 @@
     	   <h:inputTextarea value="#{twittercontroller.twitter.tweetBody}"></h:inputTextarea>
     	   </h:panelGrid>
     	   <h:commandButton value="post" action="#{twittercontroller.sendTweet}"></h:commandButton>
+    	   
     	   <h:commandButton  value="Direct Message" action="#{twittercontroller.sendDM}"></h:commandButton>
     	</h:form>
+    	<br></br>
+    	Restful API link <br></br>
+    	http://localhost:8080/Frontend/resources/Service/tweets
     </h:body>
 </html>
 
