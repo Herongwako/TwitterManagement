@@ -40,7 +40,7 @@ public class TwitterEJB {
 	}
 	public static ConfigurationBuilder configBuilder() {
 		// making it easy to use the configuration builder
-		String OAuthConsumerKey = "rflSmFmm5yQ96xWk0r9zLRnAq44";
+		String OAuthConsumerKey = "rflSmFmm5yQ96xWk0r9zLRnAq";
 		String OAuthConsumerSecret = "h4FV2c2WxtIh7GQkBE2nWqfWQzTRo77Du4caAj5KxnwLSUAJFi";
 		String OAuthAccessToken ="1182075984658468866-829vkgiRDn2pcaeHeS2kNw3j9PwRhX";
 		String OAuthAccessTokenSecret = "kOl6ctiieF82GFs4m2mjcJ50V04FPg5kydPmJIq61vDXz";
